@@ -7,7 +7,7 @@ class Owner {
     static hasMany = [pets:Pet]
     
     static constraints = {
-        name()
-        surname()
+        name(maxLength:30, blank:false)
+        surname(maxLength:30, blank:false)
     }
 }
